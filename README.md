@@ -38,3 +38,14 @@ python app.py
 Open browser at `http://127.0.0.1:8050`
 
 ## Project Structure
+ran-kpi-dashboard/
+│
+├── app.py          # Main dashboard application
+└── README.md       # Project documentation
+## Screenshots
+
+Dashboard covers 5 sites across Chennai, Mumbai, Delhi and Bangalore with 7-day historical data and 24-hour hourly resolution.
+
+## Author
+
+Built as part of a Network Design & Optimisation portfolio project targeting telecom engineering roles.
