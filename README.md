@@ -87,59 +87,26 @@ The overview appears above. Expand the gallery to browse the additional project 
 
 ## Run locally
 
-### 1. Download the project
+1. **Install Python** on your computer.
+2. **Download the project:** on GitHub, click **Code → Download ZIP**, then extract it.
+3. **Open a terminal** in the extracted folder containing `app.py`.
+4. **Install the required packages:**
 
-```bash
-git clone https://github.com/mohammedsuhail007/ran-kpi-dashboard.git
-cd ran-kpi-dashboard
-```
+   ```bash
+   python -m pip install dash plotly pandas anthropic
+   ```
 
-### 2. Create a virtual environment
+5. **Start the dashboard:**
 
-```bash
-python -m venv .venv
-```
+   ```bash
+   python app.py
+   ```
 
-Activate it on **Windows PowerShell**:
+6. **Open your browser** and go to **http://127.0.0.1:8050**.
 
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
+The dashboard works without an API key; only the **AI Assistant** needs an `ANTHROPIC_API_KEY`.
 
-Or on **macOS / Linux**:
-
-```bash
-source .venv/bin/activate
-```
-
-### 3. Install dependencies and start the dashboard
-
-```bash
-python -m pip install dash plotly pandas anthropic
-python app.py
-```
-
-Open **http://127.0.0.1:8050** in your browser.
-
-### Optional: enable the AI assistant
-
-The charts and analysis run without an API key. To use the **AI Assistant** tab, set `ANTHROPIC_API_KEY` in the terminal before starting the app.
-
-**Windows PowerShell**
-
-```powershell
-$env:ANTHROPIC_API_KEY="your-api-key"
-python app.py
-```
-
-**macOS / Linux**
-
-```bash
-export ANTHROPIC_API_KEY="your-api-key"
-python app.py
-```
-
-The integration requires API access to the model configured in `app.py`. Keep your actual key out of repository files.
+**Simple explanation:** “I install the required Python packages, run `app.py` to start the local server, and open the dashboard in my browser.”
 
 ## Demo walkthrough
 
